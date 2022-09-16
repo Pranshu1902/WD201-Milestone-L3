@@ -25,7 +25,7 @@ const todoList = () => {
   const toDisplayableList = (list) => {
     let output = "";
     list.forEach((task) => {
-      output += `[${task.completed ? "X" : " "}] ${task.title} ${
+      output += `[${task.completed ? "x" : " "}] ${task.title} ${
         task.dueDate == formattedDate(new Date()) ? "" : task.dueDate
       }\n`;
     });
