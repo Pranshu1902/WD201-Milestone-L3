@@ -29,6 +29,7 @@ const todoList = () => {
         task.dueDate == formattedDate(new Date()) ? "" : task.dueDate
       }\n`;
     });
+    output = output.trim();
     return output;
   };
 
